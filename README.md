@@ -4,9 +4,9 @@
 # Reference Architecture Docs for the Apprenda Cloud Platform
 
 * [Summary](summary/summary.md)
-  * Introduction
-  * Who Should Read This Reference Guide?
-  * Next Steps
+  * [Introduction](summary/summary.md#introduction)
+  * [Who Should Read This Reference Guide?](summary/summary.md#who-should-read)
+  * [Next Steps](summary/summary.md#next-steps)
 * [What is the Apprenda Cloud Platform?](overview/what-is-the-apprenda-cloud-platform.md)
 * [Deployment Planning](planning/deployment-planning.md)
   * Public Cloud, Private Datacenter, and Hybrid
