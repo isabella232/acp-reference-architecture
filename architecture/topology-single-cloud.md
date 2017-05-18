@@ -11,7 +11,7 @@ On the Apprenda Platform, the Load Manager (best described as a reverse proxy) s
 For high availability purposes, we recommend a topology consisting of two Load Manager instances.
 
 ## Coordinator Nodes
-Coordination of guest application workload deployment is handled by these nodes. The servers run a custom implementation of Apache ZooKeeper, running as a Windows service. Per the Apache ZooKeeper website, ZooKeeper is “a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.” On Apprenda, the Platform Coordinator Nodes maintain knowledge of the topology of guest application workloads across all nodes, as well as any shared configuration in use by Apprenda components.
+Coordination of guest application workload deployment is handled by these nodes. The servers run Apache ZooKeeper, wrapped in an Apprenda Windows service. More on the Apache Zookeeper project here: [https://zookeeper.apache.org/](https://zookeeper.apache.org/). On Apprenda, the Platform Coordinator Nodes maintain knowledge of the topology of guest application workloads across all nodes, as well as any shared configuration in use by Apprenda components.
 
 An optimal Platform installation requires an odd number of Platform Coordination Nodes, as a majority of extant Platform Coordination Nodes ((n+1)/2, where n=the number of nodes) must be up and running in order for the Platform to function properly. We suggest starting with 3 dedicated Platform Coordination nodes, which will allow the Platform to function as long as any 2 nodes are running; additional nodes can be added as needed once the environment is up and running.
 
