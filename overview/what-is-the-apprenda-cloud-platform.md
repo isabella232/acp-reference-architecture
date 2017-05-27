@@ -1,6 +1,6 @@
 # What is the Apprenda Cloud Platform?
 
-Apprenda is system for .NET, Java, and containerized applications where application workloads are first-class citizens of the architecture. Apprenda aggregates host Windows and Linux infrastructure into an abstracted single pool of compute resources that becomes a multitenant self-service platform for development teams.  Developers interact with the platform through a collection of interfaces and APIs, instructing it to deploy, scale, configure, and otherwise manage their application workloads.
+Apprenda is a system for .NET, Java, and containerized applications where application workloads are first-class citizens of the architecture. Apprenda aggregates host Windows and Linux infrastructure into an abstracted single pool of compute resources that becomes a multitenant self-service platform for development teams.  Developers interact with the platform through a collection of interfaces and APIs, instructing it to deploy, scale, configure, and otherwise manage their application workloads.
 
 An application running on Apprenda is one that is composed of some combination of the following:
 * .NET
