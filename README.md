@@ -12,6 +12,7 @@
   * Public Cloud, Private Datacenter, and Hybrid
   * Optional Infrastructure
   * A Note About Infrastructure Sizing
+  * [Considerations for Availability and Redundancy](planning/considerations-for-availability.md)
 * [Hardware](provisioning/hardware.md)
   * Machines
     * Base Metal vs. Virtual Machines
