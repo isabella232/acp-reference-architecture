@@ -35,6 +35,9 @@ Linux Servers host Java Web Application components, which are deployed and manag
 ### Docker
 Linux machines with the Docker engine installed are Linux worker nodes capable of also running Docker images deloyed via Apprenda.
 
+### Kubernetes
+As of version 7.1.0 of the Apprenda platform, operators may attach existing [Kubernetes](https://www.kubernetes.io) clusters to a running instance of the platfrom and gain operational control and pod deployment capabilities against that cluster through the Apprenda toolset.  Clusters should be installed using the [Kismatic Enterprise Toolkit](https://www.github.com/apprenda/kismatic), which uses best practices for enterprise-ready Kubernetes clusters.
+
 ### Database Servers
 **MS SQL**
 The Platform manages SQL Server instances on your behalf to provision and configure guest application databases. Any number of SQL Server instances can be managed by a single Platform, and SQL instances can be added to the Platform at any time for capacity.  Our reference architecture includes a single SQL Server instance that is configured as a SQL Server failover cluster; such a configuration typically relies on shared storage on a SAN or NAS.  We’ve included two SQL nodes in the cluster as a standard recommendation for simple redundancy.  The Platform will manage this cluster as it would a normal SQL Server instance.  Expansion of the database tier of our reference architecture would come in two forms:
