@@ -3,7 +3,7 @@
 
 # Reference Architecture Docs for the Apprenda Cloud Platform
 
-The documents contained in this repo describe and illustrate considerations for installing the Apprenda Cloud Platform in a production capacity in the enterprise.  Considerations include operational requirements, including networking, virtual/bare metal, OS, storage, and other requirements.  Much of the information in this document should be used as a reference point, and specific customizations can be made for your organization's needs.
+The documents contained in this repo describe and illustrate considerations for installing the Apprenda Cloud Platform in a production capacity in the enterprise.  Considerations include operational requirements such as networking, virtual/bare metal, OS, storage, and other requirements.  Much of the information in this document should be used as a reference point, and specific customizations can be made for your organization's needs.
 
 * [Summary](summary/summary.md)
   * [Introduction](summary/summary.md#introduction)
