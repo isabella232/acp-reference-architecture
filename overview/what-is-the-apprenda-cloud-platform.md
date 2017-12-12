@@ -2,21 +2,25 @@
 
 Apprenda is a system for .NET, Java, and containerized applications where application workloads are first-class citizens of the architecture. Apprenda aggregates host Windows and Linux infrastructure (operating systems) as well as Kubernetes clusters into an abstracted single pool of compute resources that becomes a multitenant self-service platform for development teams.  Developers interact with the platform through a collection of interfaces and APIs, instructing it to deploy, scale, configure, and otherwise manage their application workloads.
 
+---
 An application running on Apprenda is one that is composed of some combination of the following:
 * .NET
-  * IIS-hosted ASP.NET UI (MVC, WebForms, etc.)
-  * Self-hosted .NET WCF Web Services
+  * IIS-hosted ASP.NET Web App (`MVC, WebForms, etc.`)
+  * Self-hosted .NET Windows Communication Foundation Web Services
   * Stand-alone Windows Services
 * Java
-  * Java Web Applications (WAR or JAR deployment model)
-  * Java Web Applications (J2EE)
+  * Java Web Applications (`WAR or JAR deployment model`)
+  * Java Web Applications (`J2EE`)
 * Containers
   * Docker images
+* Kubernetes
+  * Deployment specification (`yaml`)
 * Databases
   * SQL Server Database
   * Oracle Database
+---
 
-Apprenda’s core architectural components described in this document work together to orchestrate deployment, scaling, fault tolerance, access, and more for guest applications.  Additionally, Apprenda exposes consumable shared services out of the box such as an ESB, distributed caching, application metering and monitoring, and more.  Through a plugin model, called Add-Ons, the platform can be expanded to offer any system as a shared service to guest applications.
+Apprenda’s core architectural components described in this document work together to orchestrate deployment, scaling, fault tolerance, access, and more for guest applications.  Additionally, Apprenda exposes consumable shared services out of the box such as an ESB, distributed caching, application metering and monitoring, and more.  Through a plugin model, called platform _Add-Ons_, Apprenda can be expanded to offer any datacenter system as a shared service to guest applications.
 
 Through APIs and additional backend features, Apprenda gives owners many options for operationalizing the platform.  Incorporating existing enterprise systems for change control, policy enforcement, and more is possible using the operator’s interfaces.
 
@@ -34,4 +38,5 @@ _Here are some of the Apprenda Cloud Platform’s notable features and use cases
 * A Resource Allocation Policy (RAP) management system that allows IT to “slice” the sum of the compute power under control by the Apprenda Platform into discrete units of allowed CPU and memory allocation.  Development teams can then choose these “slices” and assign them to their application components.  The Platform will monitor and throttle resource utilization based on assigned policies.  This gives IT advanced capacity planning capabilities and development teams concrete expectations while shielding them from the underlying infrastructure in the spirit of a PaaS.
 * A set of web portals and tools to manage your applications and customers.
 * An administrative web portal that gives IT a detailed view of how the Platform “sees” the infrastructure and how it has distributed application components accordingly.
-APIs for integration with enterprise monitoring, logging, and other tools for use in an SRE practice.
+* APIs for integration with enterprise monitoring, logging, and other tools for use in an SRE practice.
+* An operational control plane that allows IT orgs to offer cloud-like app deployment (including CI/CD) under a shared service model within an enterprise
